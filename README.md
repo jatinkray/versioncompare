@@ -3,7 +3,6 @@ This app is developed using golang to build a cron utility for comparing deploye
 
 
 ## local build and run 
-----
 
 For local development, your system required to have following prequisites
 - golang minimum version 12
@@ -13,10 +12,8 @@ For local development, your system required to have following prequisites
 ```
 
 ## Production run 
------
+Using executable binary
 
-using executable binary
----
 ```shell
 wget 
 
@@ -26,8 +23,8 @@ export PRODUCTION_URL=""
 versioncompare
 ```
 
-using docker 
----
+Using docker 
+
 ```shell
 docker run -e APP_CRON_SCHEDULE="0 */1 * * * *" -e TEST_URL="" -e PRODUCTION_URL="" -it jatinkray/versioncompare
 ```
