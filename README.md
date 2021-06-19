@@ -1,3 +1,4 @@
+[![Go](https://github.com/jatinkray/versioncompare/actions/workflows/go.yml/badge.svg)](https://github.com/jatinkray/versioncompare/actions/workflows/go.yml)
 # Description
 This app is developed using golang to build a cron utility for comparing deployed application url core versions.
 
