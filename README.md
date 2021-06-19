@@ -16,18 +16,18 @@ For local development, your system required to have following prequisites
 Using executable binary
 
 ```shell
-wget 
-
+wget https://github.com/jatinkray/versioncompare/releases/download/v0.0.1/versioncompare-`uname`-`arch`.zip
+unzip versioncompare-`uname`-`arch`.zip
 export APP_CRON_SCHEDULE="0 */1 * * * *"
-export TEST_URL=""
-export PRODUCTION_URL=""
+export TEST_URL="https://horizon-testnet.stellar.org/"
+export PROD_URL="https://horizon.stellar.org/"
 versioncompare
 ```
 
 Using docker 
 
 ```shell
-docker run -e APP_CRON_SCHEDULE="0 */1 * * * *" -e TEST_URL="" -e PRODUCTION_URL="" -it jatinkray/versioncompare
+docker run -e APP_CRON_SCHEDULE="0 */1 * * * *" -e TEST_URL="https://horizon-testnet.stellar.org/" -e PROD_URL="https://horizon.stellar.org/" -it jatinkray/versioncompare
 ```
 
 ### CRON schedule

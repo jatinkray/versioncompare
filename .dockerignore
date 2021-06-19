@@ -1,0 +1,7 @@
+#ignore to be added in docker
+.git/
+.github/
+build/
+
+*.md
+*.sh
